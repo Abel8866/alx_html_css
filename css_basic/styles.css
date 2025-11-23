@@ -7,6 +7,80 @@ main {
 	flex: auto; /* allow main to grow/shrink inside body */
 }
 
+/* -----------------------------
+	 Visual styling (colors, logos,
+	 typography inside article, etc.)
+	 ----------------------------- */
+
+/* Logo in header */
+.logo {
+	font-size: 1.35rem;
+	font-weight: 700;
+	color: var(--accent);
+	padding-right: .5rem;
+	display: inline-block;
+}
+
+/* Header polish */
+header {
+	background: linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.9));
+	box-shadow: 0 1px 0 rgba(12,23,40,0.04);
+}
+
+/* Nav links as subtle pills */
+nav a {
+	display: inline-block;
+	padding: .45rem .7rem;
+	border-radius: 999px;
+	color: var(--text);
+	background: transparent;
+	transition: background .15s ease, color .15s ease, transform .06s ease;
+}
+nav a:hover,
+nav a:focus {
+	background: rgba(29,161,242,0.08);
+	color: var(--accent);
+	outline: none;
+	transform: translateY(-1px);
+}
+
+/* Improve headings inside article */
+article h1 {
+	font-size: 1.5rem;
+	margin-bottom: .5rem;
+}
+article h2 {
+	font-size: 1.15rem;
+	margin-top: 1rem;
+	color: #0b4a6f;
+}
+article p { color: #263238; }
+
+/* Make links inside article more visible */
+article a {
+	color: var(--accent);
+	font-weight: 600;
+}
+
+/* Table styling (zebra + subtle borders) */
+tbody tr:nth-child(odd) { background: #ffffff; }
+tbody tr:nth-child(even) { background: #fbfdff; }
+thead th {
+	background: linear-gradient(180deg,#f8fafc,#f1f5f9);
+	border-bottom: 1px solid #e6eef6;
+}
+
+/* Blockquote tweaks (tweet area) */
+blockquote.twitter-tweet {
+	border-radius: 8px;
+	padding-left: .9rem;
+	font-style: normal;
+}
+
+/* Slightly larger footer text color */
+footer { background: transparent; }
+
+
 article {
 	background: var(--surface);
 	padding: 1rem 1.25rem;
