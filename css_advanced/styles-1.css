@@ -6,12 +6,12 @@
 }
 
 .banner {
-    background-image: url(css_advanced/Object.png);
+    background-image: url(Object.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 1193px;  
-    width: 100%;
+    min-width: 100%;
     position: absolute;
 }
 
