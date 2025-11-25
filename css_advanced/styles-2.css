@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.two-column-section {
+    min-width: 100%;
+    height: 392px;
+    background-color: #C271FF;
+    position: absolute;
+}
+
+.two-column-layout {
+    margin: 108px auto 0px;
+    width: 761px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 53px;
+}
+
+.column-right-box {
+    width: 550px;
+    height: 158;
+    color: white;
+
+}
+
+.column-right-box p {
+    font-family:  Sans Pro;
+    font-size: 18px;
+    line-height: 33.6px;
+}
+
+.name {
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.description {
+    font-weight: 400;
+     margin-bottom: 22px;
+}
