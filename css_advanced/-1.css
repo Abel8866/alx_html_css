@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.banner {
+    background-image: url(css_advanced/Object.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 1193px;  
+    width: 100%;
+    position: absolute;
+}
+
+/* Header layout relative to container width/height */
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 35.02px auto 0;
+    max-width: 1103.4078369140625px;
+
+}
+
+.header .layout ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.8vw;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.75rem;   /* relative to root font-size */
+}
+
+.header .layout ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hero block positioned and sized relatively */
+
+.main-container {
+    margin: 220px auto 0;
+    position: relative;
+}
+.hero {
+    position: relatiabve;
+    text-align: center;
+    max-width: 100%;     /* full width */
+    width: 684px;
+    margin: 0 auto;
+}
+
+.hero .hero-title {
+    width: 684px;
+    height: 151px;
+}
+
+
+.hero .hero-title p {
+    
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero .hero-features {
+    width: 351px;
+    margin: -5px auto;
+}
+
+.hero .hero-features ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: white;
+    font-size: 100%;      /* relative to parent */
+    padding: 0;
+}
+
+/* CTA under hero, spacing in relative units */
+.hero-cta {
+    /* position: relative; */
+    text-align: center;
+    margin:48px auto;
+}
+
+.hero-cta .cta-button,
+.hero-cta button {
+    width: 162px;
+    height: 44px;
+    top: 419px;
+    left: 639px;
+    opacity: 1;
+    border-radius: 999px;
+    border: none;
+    background: #be7cb7;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Subtitle below CTA */
+.section-subtitle {
+    margin: 168px auto;
+}
+
+.section-subtitle p {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    font-family: Source Sans Pro;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+span {
+    color: #be7cb7;
+}
+
+.tutors {
+   display: flex;
+   justify-content: space-between;
+   margin: 87px auto 0px;
+   max-width: 1009px;
+   height: 237px;
+   min-width: 700px;
+}
+
+.tutors .tutor-card {
+    width: 150px;
+    height: 150px;
+}
+
+.tutor-name, .tutor-title, .tutor-meta {
+    text-align: center;
+    color: white;
+}
+
+.third-card img {
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
