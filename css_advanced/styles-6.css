@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section {
+    height: 249px;
+    background-color: #071629;
+    position: absolute;
+    min-width: 100%;
+}
+
+.footer-left {
+    display: flex;
+    justify-content: space-between;
+    gap: 736px;
+    margin: 95px auto 70px;
+    width: 1035px;
+}
+
+.footer-copy {
+    width: 96px;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    margin: 0px auto 39px;
+}
+
