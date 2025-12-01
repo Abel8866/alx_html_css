@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Mobile design */
+
+.site-header {
+    background-image: url(Sources/images/headphones_hero_1.jpg);
+    width: 375px;
+    height: 869px;
+    background-size: cover;
+    background-position: 36% -76px;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* dark purple gradient at the bottom */
+
+.header-top {
+    position: absolute;
+    top: 29px;               /* instead of margin-top */
+    left: 21px;              /* instead of margin-left */
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;              /* ensure it’s above the background */
+    width: 247px;
+    align-items: center;
+}
+
+.header-logo {
+  width: 20px;
+  height: 14px;
+}
+
+.nav-item img{
+    width: 161px;
+    height: 32px;
+}
+
+.header-actions {
+    position: absolute;
+    margin: 266px 9px 106px 9px;
+    width: 357px;
+}
+
+.action-item {
+    font-family: "Source Sans Pro", system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.action-discover {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: auto;
+    color: white;
+    text-align: center;
+}
+
+.action-headphones {
+    margin: 5px 39px 0px 39px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: auto;
+    letter-spacing: 0px;
+}
+
+.action-latest {
+    margin: 20px 97px 65px 98px;
+    text-align: center;
+}
+
+.action-latest button {
+    padding: 13px;
+    background-color: #FF6565;
+    width: 162px;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: auto;
+    letter-spacing: 0px;
+}
+
+.action-contact {
+    margin: 0px 11px 0px 11px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 26px;
+    width: 335px;
+}
+
+/* Mobile-first: your current styles (no media query needed) */
+
+/* Tablet layout (example: from 768px up to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .site-header {
+    width: 100%;          /* let it stretch */
+    height: 600px;        /* adjust hero height for tablet */
+    max-width: 1000px;    /* respect the design max width */
+  }
+
+  .header-top {
+    left: 40px;
+    top: 40px;
+  }
+
+  .header-actions {
+    width: 80%;
+    left: 10%;
+    margin: 280px 0 0 0;  /* adjust spacing */
+  }
+
+  .action-discover {
+    font-size: 40px;
+  }
+}
+
+/* Desktop layout (optional, for when you go beyond tablet) */
+@media (min-width: 1025px) {
+  .site-header {
+    max-width: 1000px;
+    width: 100%;
+    height: 700px;
+  }
+}
