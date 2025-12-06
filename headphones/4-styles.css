@@ -153,17 +153,22 @@
 }
 
 .results-section {
-    width: 357px;
-    margin: 0px auto 110px;
+  background-image: url(Sources/images/headphones_hero_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 357px;
+  margin: 0px auto 110px;
   }
 
   .results-text {
     width: 305px;
-    margin: 251px auto 77px;
+    margin: 0px auto 77px;
+    padding-top: 251px;
     text-align: center;
     font-size: 16px;
     line-height: 26px;
-    /* color: #FFFFFF; */
+    color: #FFFFFF;
   }
 
 .shape-pentagon {
@@ -177,6 +182,11 @@
     24% 100%,
     0% 38%
   );
+}
+
+.results-grid {
+  padding-bottom: 69px;
+
 }
 
 .result-card {
@@ -206,6 +216,62 @@
     letter-spacing: 0px;
     line-height: 20px;
     padding-top: 20px;
+}
+
+.contact-strip {
+  width: 335px;
+  height: 373px;
+  margin: 110px auto 130px;
+}
+
+.contact-strip-right {
+  text-align: center;
+  padding-top: 329px;
+}
+
+.contact-strip-button {
+  padding: 0px;
+  background-color: #FF6565;
+  width: 162px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  color: white;
+  font-size: 14px;
+  line-height: auto;
+  letter-spacing: 0px;
+}
+
+.site-footer {
+  width: 100%;
+  height: 249px;
+  background-color: #071629;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo {
+  padding-top: 48px;
+  width: 162px;
+  margin: 0px auto;
+  text-align: left;
+  padding-bottom: 45px;
+}
+
+.footer-icons {
+  width: 130px;
+  height: 30px;
+  align-items: center;
+  margin: 0px auto 45px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: center;
+  width: 98px;
+  margin: 0px auto;
+  font-weight: lighter;
 }
 
 /* Tablet layout (example: from 768px up to 1024px) */
