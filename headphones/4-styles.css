@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Mobile design */
+
+.site-header {
+    background-image: url(Sources/images/headphones_hero_1.jpg);
+    width: 100%;
+    height: 869px;
+    background-size: cover;
+    background-position: 36% -76px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* dark purple gradient at the bottom */
+
+
+.header-top {
+    position: relative;
+    top: 29px;               /* instead of margin-top */
+    left: 21px;              /* instead of margin-left */
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;              /* ensure it’s above the background */
+    width: 247px;
+    align-items: center;
+}
+
+.main-nav {
+  display: none;
+}
+
+.header-logo {
+  width: 20px;
+  height: 14px;
+}
+
+.header-logo:hover {
+  cursor: pointer;
+}
+
+.header-logo:click {
+  .main-nav {
+    display: block;
+  }
+}
+
+.nav-item img{
+    width: 161px;
+    height: 32px;
+}
+
+.header-actions {
+    position: relative;
+    margin: 266px auto 0px;
+    width: 357px;
+}
+
+.action-item, .main-nav {
+    font-family: "Source Sans Pro", system-ui, -apple-system, BlinkMacSystemFont,
+                 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.action-discover {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: auto;
+    color: white;
+    text-align: center;
+}
+
+.action-headphones {
+    margin: 5px 39px 0px 39px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: auto;
+    letter-spacing: 0px;
+}
+
+.action-latest {
+    margin: 20px 97px 65px 98px;
+    text-align: center;
+}
+
+.action-latest button {
+    padding: 13px;
+    background-color: #FF6565;
+    width: 162px;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: auto;
+    letter-spacing: 0px;
+}
+
+.action-latest button:hover {
+    background-color: #e05555;
+    cursor: pointer;
+}
+
+.action-contact {
+    margin: 0px auto;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    line-height: 26px;
+    padding: 0px 10px;
+}
+
+/* Mobile-first: your current styles (no media query needed) */
+
+/* Tablet layout (example: from 768px up to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+/* Desktop layout (optional, for when you go beyond tablet) */
+@media (min-width: 1025px) {
+  .site-header {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+
+  .header-top {
+    position: relative;
+    width: 75%;
+    align-items: center;
+    margin: 29px auto 385px;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .main-nav {
+    display: bolck;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 255px;
+    color: white;
+  }
+
+  .main-nav div a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+
+  .main-nav div a:hover {
+    color: #FF6565;
+  }
+
+  .header-actions {
+    width: 637px;
+    margin: 0px auto;
+  }
+
+  .action-contact {
+    font-size: 16px;
+    padding: 0px;
+  }
+}
